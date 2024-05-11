@@ -1,21 +1,18 @@
 using System.Diagnostics;
+using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using SpotifyStats.Models;
+using SpotifyAPI.Web; // NuGet for SpotifyApi
 
 namespace SpotifyStats.Controllers;
 
-public class HomeController : Controller
+public class SpotifyController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
+    public async Task<ContentResult> GetTrackInfo(string id)
     {
-        _logger = logger;
-    }
-
-    public IActionResult Index()
-    {
-        return View();
+        var spotify = new SpotifyClient("Access Token");
+        var track = await spotify.Tracks.Get(id);
+        return Content(track.Name);
     }
 
     public IActionResult Privacy()
