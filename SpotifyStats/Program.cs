@@ -1,11 +1,12 @@
+using SpotifyAPI.Web;
+using ConfigurationManager = System.Configuration.ConfigurationManager;
 
 var builder = WebApplication.CreateBuilder(args);
 var services = builder.Services;
 
 // Add services to the container.
 services.AddControllersWithViews();
-
-var app = builder.Build(); 
+var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -21,9 +22,10 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseAuthentication();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Spotify}/{action=GetTrackInfo}/{id?}");
+app.MapControllerRoute(name: "default",
+    pattern: "{controller=Login}/{action=Auth}");
+app.MapControllerRoute(name: "GetPlaylist", pattern: "{controller=Spotify}/{action=GetTrackInfo}/{id?}");
 
 app.Run();
