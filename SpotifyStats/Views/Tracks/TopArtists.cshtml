@@ -1,0 +1,31 @@
+@model List<SpotifyStats.Models.Track>
+
+@{
+    ViewData["Title"] = "Top Tracks";
+}
+
+<h1>Top Tracks</h1>
+
+@if (Model.Count > 0)
+{
+    <ul>
+        @foreach (var track in Model)
+        {
+            <li>
+                <strong>@track.Name</strong> by 
+                @foreach (var artist in track.Artists)
+                {
+                    @artist.Name 
+                }
+                <br />
+                Album: @track.Album.Name
+                <br />
+                <img src="@track.Album.Images.FirstOrDefault()?.Url" alt="Album cover" width="100" />
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>No top tracks available.</p>
+}

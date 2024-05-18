@@ -8,8 +8,23 @@
 
     <ItemGroup>
       <PackageReference Include="AspNet.Security.OAuth.Spotify" Version="8.0.0" />
+      <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="6.0.0" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+      <PackageReference Include="RestSharp" Version="110.2.1-alpha.0.20" />
       <PackageReference Include="SpotifyAPI.Web" Version="7.1.1" />
       <PackageReference Include="System.Configuration.ConfigurationManager" Version="9.0.0-preview.3.24172.9" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Pages\GetClientId\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Spotify\Privacy.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\Error.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\_Layout.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\_ValidationScriptsPartial.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <UpToDateCheckInput Remove="Views\Spotify\Privacy.cshtml" />
     </ItemGroup>
 
 </Project>
