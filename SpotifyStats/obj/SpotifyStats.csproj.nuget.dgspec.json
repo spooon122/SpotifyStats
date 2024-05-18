@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\spoon\\RiderProjects\\SpotifyStats\\SpotifyStats\\SpotifyStats.csproj": {}
+    "C:\\Users\\spoon\\RiderProjects\\SpotifyStat\\SpotifyStats\\SpotifyStats.csproj": {}
   },
   "projects": {
-    "C:\\Users\\spoon\\RiderProjects\\SpotifyStats\\SpotifyStats\\SpotifyStats.csproj": {
+    "C:\\Users\\spoon\\RiderProjects\\SpotifyStat\\SpotifyStats\\SpotifyStats.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\spoon\\RiderProjects\\SpotifyStats\\SpotifyStats\\SpotifyStats.csproj",
+        "projectUniqueName": "C:\\Users\\spoon\\RiderProjects\\SpotifyStat\\SpotifyStats\\SpotifyStats.csproj",
         "projectName": "SpotifyStats",
-        "projectPath": "C:\\Users\\spoon\\RiderProjects\\SpotifyStats\\SpotifyStats\\SpotifyStats.csproj",
+        "projectPath": "C:\\Users\\spoon\\RiderProjects\\SpotifyStat\\SpotifyStats\\SpotifyStats.csproj",
         "packagesPath": "C:\\Users\\spoon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\spoon\\RiderProjects\\SpotifyStats\\SpotifyStats\\obj\\",
+        "outputPath": "C:\\Users\\spoon\\RiderProjects\\SpotifyStat\\SpotifyStats\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\spoon\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,9 +38,29 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AspNet.Security.OAuth.Spotify": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[110.2.1-alpha.0.20, )"
+            },
             "SpotifyAPI.Web": {
               "target": "Package",
               "version": "[7.1.1, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[9.0.0-preview.3.24172.9, )"
             }
           },
           "imports": [
@@ -62,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\spoon\\.dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

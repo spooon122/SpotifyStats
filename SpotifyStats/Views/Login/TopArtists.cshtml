@@ -1,0 +1,30 @@
+@model IEnumerable<SpotifyStats.Models.Artist>
+
+@{
+    ViewData["Title"] = "Top Artists";
+}
+
+<h2>Top Artists</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var artist in Model)
+        {
+            <tr>
+                <td>
+                    @if (!string.IsNullOrEmpty(artist.ImageUrl))
+                    {
+                        <img src="@artist.ImageUrl" alt="@artist.Name" width="50" height="50" />
+                    }
+                </td>
+                <td>@artist.Name</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,11 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "iT/4ZJdu9Nz0aZVCUeonPBUzilbCToDmR3YaO0YDS2o6hirLz2iHexqOZICs1pheKbHL97WGSgVRAOAbnC2NnQ==",
+  "dgSpecHash": "dobNXFqYLcCmjjycV/uKP/2YUwkcDhiJWzXg/QsTqiPF67FRBoiEdqcF31fz58wi2b+ejRFfHnVat/8DLG4l2Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\spoon\\RiderProjects\\SpotifyStats\\SpotifyStats\\SpotifyStats.csproj",
+  "projectFilePath": "C:\\Users\\spoon\\RiderProjects\\SpotifyStat\\SpotifyStats\\SpotifyStats.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\spoon\\.nuget\\packages\\aspnet.security.oauth.spotify\\8.0.0\\aspnet.security.oauth.spotify.8.0.0.nupkg.sha512",
+    "C:\\Users\\spoon\\.nuget\\packages\\microsoft.aspnet.webapi.client\\6.0.0\\microsoft.aspnet.webapi.client.6.0.0.nupkg.sha512",
     "C:\\Users\\spoon\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\spoon\\.nuget\\packages\\spotifyapi.web\\7.1.1\\spotifyapi.web.7.1.1.nupkg.sha512"
+    "C:\\Users\\spoon\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "C:\\Users\\spoon\\.nuget\\packages\\restsharp\\110.2.1-alpha.0.20\\restsharp.110.2.1-alpha.0.20.nupkg.sha512",
+    "C:\\Users\\spoon\\.nuget\\packages\\spotifyapi.web\\7.1.1\\spotifyapi.web.7.1.1.nupkg.sha512",
+    "C:\\Users\\spoon\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.0-preview.3.24172.9\\system.configuration.configurationmanager.9.0.0-preview.3.24172.9.nupkg.sha512",
+    "C:\\Users\\spoon\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.0-preview.3.24172.9\\system.diagnostics.eventlog.9.0.0-preview.3.24172.9.nupkg.sha512",
+    "C:\\Users\\spoon\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\spoon\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.0-preview.3.24172.9\\system.security.cryptography.protecteddata.9.0.0-preview.3.24172.9.nupkg.sha512",
+    "C:\\Users\\spoon\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }
