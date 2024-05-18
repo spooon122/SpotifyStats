@@ -14,7 +14,7 @@ public class SpotifyAuthController : Controller
     [Route("auth")]
     public IActionResult Login()
     {
-        var clientId = "d2499ddf4a7644b9b670dd31c929761b";
+        var clientId = "clientId";
         var redirectUri = "http://localhost:5252/callback";
         var scopes = "user-read-private user-read-email user-top-read";
         var state = new GenerateRandomString().GenerateRandString(16);
@@ -28,8 +28,8 @@ public class SpotifyAuthController : Controller
     [Route("callback")]
     public async Task<IActionResult> Callback(string code)
     {
-        var clientId = "d2499ddf4a7644b9b670dd31c929761b";
-        var clientSecret = "e792ecb51ec5457bb0bb89d48d031660";
+        var clientId = "clientId";
+        var clientSecret = "clientSecret";
         var redirectUri = "http://localhost:5252/callback";
 
         var client = new RestClient("https://accounts.spotify.com");
