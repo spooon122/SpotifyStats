@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\spoon\\RiderProjects\\SpotifyStats\\SpotifyStats\\SpotifyStats.csproj": {}
+    "C:\\Users\\spoon\\RiderProjects\\SpotifyStats — копия\\SpotifyStats\\SpotifyStats.csproj": {}
   },
   "projects": {
-    "C:\\Users\\spoon\\RiderProjects\\SpotifyStats\\SpotifyStats\\SpotifyStats.csproj": {
+    "C:\\Users\\spoon\\RiderProjects\\SpotifyStats — копия\\SpotifyStats\\SpotifyStats.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\spoon\\RiderProjects\\SpotifyStats\\SpotifyStats\\SpotifyStats.csproj",
+        "projectUniqueName": "C:\\Users\\spoon\\RiderProjects\\SpotifyStats — копия\\SpotifyStats\\SpotifyStats.csproj",
         "projectName": "SpotifyStats",
-        "projectPath": "C:\\Users\\spoon\\RiderProjects\\SpotifyStats\\SpotifyStats\\SpotifyStats.csproj",
+        "projectPath": "C:\\Users\\spoon\\RiderProjects\\SpotifyStats — копия\\SpotifyStats\\SpotifyStats.csproj",
         "packagesPath": "C:\\Users\\spoon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\spoon\\RiderProjects\\SpotifyStats\\SpotifyStats\\obj\\",
+        "outputPath": "C:\\Users\\spoon\\RiderProjects\\SpotifyStats — копия\\SpotifyStats\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\spoon\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -41,6 +41,22 @@
             "AspNet.Security.OAuth.Spotify": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[110.2.1-alpha.0.20, )"
             },
             "SpotifyAPI.Web": {
               "target": "Package",
