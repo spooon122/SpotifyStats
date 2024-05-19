@@ -484,11 +484,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\spoon\\RiderProjects\\SpotifyStat\\SpotifyStats\\SpotifyStats.csproj",
+      "projectUniqueName": "C:\\Users\\spoon\\RiderProjects\\SpotifyStats\\SpotifyStats\\SpotifyStats.csproj",
       "projectName": "SpotifyStats",
-      "projectPath": "C:\\Users\\spoon\\RiderProjects\\SpotifyStat\\SpotifyStats\\SpotifyStats.csproj",
+      "projectPath": "C:\\Users\\spoon\\RiderProjects\\SpotifyStats\\SpotifyStats\\SpotifyStats.csproj",
       "packagesPath": "C:\\Users\\spoon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\spoon\\RiderProjects\\SpotifyStat\\SpotifyStats\\obj\\",
+      "outputPath": "C:\\Users\\spoon\\RiderProjects\\SpotifyStats\\SpotifyStats\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\spoon\\AppData\\Roaming\\NuGet\\NuGet.Config"

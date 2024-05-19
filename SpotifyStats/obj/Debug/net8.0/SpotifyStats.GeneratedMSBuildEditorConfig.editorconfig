@@ -9,51 +9,23 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SpotifyStats
 build_property.RootNamespace = SpotifyStats
-build_property.ProjectDir = C:\Users\spoon\RiderProjects\SpotifyStat\SpotifyStats\
+build_property.ProjectDir = C:\Users\spoon\RiderProjects\SpotifyStats\SpotifyStats\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\spoon\RiderProjects\SpotifyStat\SpotifyStats
+build_property.MSBuildProjectDirectory = C:\Users\spoon\RiderProjects\SpotifyStats\SpotifyStats
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/spoon/RiderProjects/SpotifyStat/SpotifyStats/Pages/GetClientId/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2V0Q2xpZW50SWRcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/spoon/RiderProjects/SpotifyStat/SpotifyStats/Views/Login/Callback.cshtml]
+[C:/Users/spoon/RiderProjects/SpotifyStats/SpotifyStats/Views/Login/Callback.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQ2FsbGJhY2suY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/spoon/RiderProjects/SpotifyStat/SpotifyStats/Views/Login/TopArtists.cshtml]
+[C:/Users/spoon/RiderProjects/SpotifyStats/SpotifyStats/Views/Login/TopArtists.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cVG9wQXJ0aXN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/spoon/RiderProjects/SpotifyStat/SpotifyStats/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/spoon/RiderProjects/SpotifyStat/SpotifyStats/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/spoon/RiderProjects/SpotifyStat/SpotifyStats/Views/Spotify/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BvdGlmeVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/spoon/RiderProjects/SpotifyStat/SpotifyStats/Views/Tracks/TopArtists.cshtml]
+[C:/Users/spoon/RiderProjects/SpotifyStats/SpotifyStats/Views/Tracks/TopArtists.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhY2tzXFRvcEFydGlzdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/spoon/RiderProjects/SpotifyStat/SpotifyStats/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/spoon/RiderProjects/SpotifyStat/SpotifyStats/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/spoon/RiderProjects/SpotifyStat/SpotifyStats/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-czk7gdl056

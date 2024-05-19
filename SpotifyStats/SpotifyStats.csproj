@@ -21,6 +21,9 @@
       <_ContentIncludedByDefault Remove="Views\Shared\Error.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Shared\_Layout.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Shared\_ValidationScriptsPartial.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Login\Callback.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Login\TopArtists.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Tracks\TopArtists.cshtml" />
     </ItemGroup>
 
     <ItemGroup>

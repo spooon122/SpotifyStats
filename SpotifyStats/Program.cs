@@ -1,12 +1,18 @@
 using SpotifyAPI.Web;
 using SpotifyStats.Models;
-using ConfigurationManager = System.Configuration.ConfigurationManager;
 
 var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddControllersWithViews();
-builder.Services.AddSession();
-
+var services = builder.Services;
+services.AddAuthorization();
+services.AddAuthentication();
+services.AddControllers();
+services.AddControllersWithViews();
+services.AddSingleton<SpotifyClientFactory>();
+services.AddScoped<SpotifyClient>(provider =>
+{
+    var factory = provider.GetRequiredService<SpotifyClientFactory>();
+    return factory.CreateClient();
+});
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())
@@ -20,11 +26,9 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseSession();
-
 app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Tracks}/{action=TopArtists}/{id?}");
+    pattern: "{controller=Login}/{action=Login}/{id?}");
 
 app.Run();

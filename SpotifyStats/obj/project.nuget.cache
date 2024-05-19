@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dobNXFqYLcCmjjycV/uKP/2YUwkcDhiJWzXg/QsTqiPF67FRBoiEdqcF31fz58wi2b+ejRFfHnVat/8DLG4l2Q==",
+  "dgSpecHash": "wO3gODX0ESXjiKbVWr8vstOp5ETEiqotUxPcI4xubxRNsfX/yb3XB23/F4oDkVAuLIrhG8lFQXMHfsQEKgRPhQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\spoon\\RiderProjects\\SpotifyStat\\SpotifyStats\\SpotifyStats.csproj",
+  "projectFilePath": "C:\\Users\\spoon\\RiderProjects\\SpotifyStats\\SpotifyStats\\SpotifyStats.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\spoon\\.nuget\\packages\\aspnet.security.oauth.spotify\\8.0.0\\aspnet.security.oauth.spotify.8.0.0.nupkg.sha512",
     "C:\\Users\\spoon\\.nuget\\packages\\microsoft.aspnet.webapi.client\\6.0.0\\microsoft.aspnet.webapi.client.6.0.0.nupkg.sha512",
