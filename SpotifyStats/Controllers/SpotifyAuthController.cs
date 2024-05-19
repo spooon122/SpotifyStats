@@ -1,60 +1,4 @@
-// using System.Text.Json;
-// using Microsoft.AspNetCore.Mvc;
-// using SpotifyAPI.Web;
-// using SpotifyStats.Models;
-// using ConfigurationManager = System.Configuration.ConfigurationManager;
-//
-//
-// namespace SpotifyStats.Controllers;
-//
-// public class LoginController : Controller
-// {
-//     private readonly SpotifyClientFactory _spotifyClientFactory;
-//     private readonly string? _clientId = ConfigurationManager.AppSettings["ClientId"];
-//     private readonly string? _secretId = ConfigurationManager.AppSettings["SecretId"];
-//
-//     public LoginController(SpotifyClientFactory spotifyClientFactory)
-//     {
-//         _spotifyClientFactory = spotifyClientFactory;
-//     }
-//
-//     [Route("auth")]
-//     public async Task<RedirectResult> Auth()
-//     {
-//         // const string redirectUri = "http://localhost:5252/callback";
-//         // var state = new GenerateRandomString().GenerateRandString(16);
-//         // var scope = "user-read-private user-read-email";
-//         // var queryString = HttpUtility.ParseQueryString(string.Empty);
-//         //
-//         // queryString["response_type"] = "code";
-//         // queryString["client_id"] = _clientId;
-//         // queryString["scope"] = scope;
-//         // queryString["redirect_uri"] = redirectUri;
-//         // queryString["state"] = state;
-//         //
-//         // var spotifyAuthUrl = "https://accounts.spotify.com/authorize?" + queryString;
-//         // return Redirect(spotifyAuthUrl);
-//         var loginRequest = new LoginRequest(
-//             new Uri("http://localhost:5252/callback"),
-//             _clientId,
-//             LoginRequest.ResponseType.Code
-//         )
-//         {
-//             Scope = new[] { Scopes.UserReadPrivate, Scopes.UserReadEmail, Scopes.UserTopRead, Scopes.UserReadRecentlyPlayed}
-//         };
-//         var uri = loginRequest.ToUri();
-//         
-//         return Redirect(uri.ToString());
-//         
-//     }
-//     [Route("callback")]
-//     public async Task Callback(string code)
-//     {
-//         var response = await new OAuthClient().RequestToken(
-//             new AuthorizationCodeTokenRequest(_clientId, _secretId, code, new Uri("http://localhost:5252/artist/")));
-//         _spotifyClientFactory.SetAccessToken(response.AccessToken);
-//     }
-// }
+
 
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -70,7 +14,7 @@ public class SpotifyAuthController : Controller
     [Route("auth")]
     public IActionResult Login()
     {
-        var clientId = "d2499ddf4a7644b9b670dd31c929761b";
+        var clientId = "clientId";
         var redirectUri = "http://localhost:5252/callback";
         var scopes = "user-read-private user-read-email user-top-read";
         var state = new GenerateRandomString().GenerateRandString(16);
@@ -84,8 +28,8 @@ public class SpotifyAuthController : Controller
     [Route("callback")]
     public async Task<IActionResult> Callback(string code)
     {
-        var clientId = "d2499ddf4a7644b9b670dd31c929761b";
-        var clientSecret = "e792ecb51ec5457bb0bb89d48d031660";
+        var clientId = "clientId";
+        var clientSecret = "clientSecret";
         var redirectUri = "http://localhost:5252/callback";
 
         var client = new RestClient("https://accounts.spotify.com");
