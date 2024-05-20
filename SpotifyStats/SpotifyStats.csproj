@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <PackageReference Include="AspNet.Security.OAuth.Spotify" Version="8.0.0" />
+      <PackageReference Include="bootstrap" Version="5.3.3" />
       <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="6.0.0" />
       <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
       <PackageReference Include="RestSharp" Version="110.2.1-alpha.0.20" />

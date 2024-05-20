@@ -1,7 +1,9 @@
 @model IEnumerable<SpotifyStats.Models.Tracks>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top Tracks</title>
@@ -12,12 +14,16 @@
     <h1>Top Tracks</h1>
 </header>
 <main>
+    <button type="button" class="btn btn-secondary">Secondary</button>    
+    <button type="button" class="btn btn-secondary">Secondary</button>    
+    <button type="button" class="btn btn-secondary">Secondary</button>    
+
     <section class="top-tracks">
         <!-- Треки будут динамически добавлены здесь -->
         @foreach (var track in Model)
         {
             <div class="track">
-                <img src="@track.ImageUrl" alt="Track Image">
+                <img src="@track.ImageUrl" alt="Track Image" width="150" height="150">
                 <p>@track.Name</p>
             </div>
         }
