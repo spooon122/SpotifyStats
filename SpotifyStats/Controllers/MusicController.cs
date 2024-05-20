@@ -32,4 +32,19 @@ public class MusicController : Controller
 
         return View(artists);
     }
+
+    [Route("tracks")]
+    public async Task<IActionResult> TopTracks()
+    {
+        var user = _spotifyClient.UserProfile;
+        var topTracksResponse = await user.GetTopTracks(new UsersTopItemsRequest(TimeRange.MediumTerm));
+
+        var tracks = topTracksResponse.Items.Select(tracks => new Tracks
+        {
+            Name = tracks.Name,
+            ImageUrl = tracks.Album.Images.FirstOrDefault()?.Url
+        }).ToList();
+
+        return View(tracks);
+    }
 }
