@@ -23,11 +23,15 @@ public class MusicController : Controller
     public async Task<IActionResult> TopArtists()
     {
         var user = _spotifyClient.UserProfile;
-        var topArtistsResponse = await user.GetTopArtists(new UsersTopItemsRequest(TimeRange.LongTerm));
+        var topArtistsResponse = await user.GetTopArtists(new UsersTopItemsRequest(TimeRange.LongTerm)
+        {
+            Limit = 50
+        });
 
         var artists = topArtistsResponse.Items.Select(artist => new Artist
         {
             Name = artist.Name,
+            Genres = string.Join(", ", artist.Genres),
             ImageUrl = artist.Images.FirstOrDefault()?.Url
         }).ToList();
 
@@ -38,7 +42,10 @@ public class MusicController : Controller
     public async Task<IActionResult> TopTracks()
     {
         var user = _spotifyClient.UserProfile;
-        var topTracksResponse = await user.GetTopTracks(new UsersTopItemsRequest(TimeRange.MediumTerm));
+        var topTracksResponse = await user.GetTopTracks(new UsersTopItemsRequest(TimeRange.MediumTerm)
+        {
+            Limit = 50
+        });
 
         var tracks = topTracksResponse.Items.Select(tracks => new Tracks
         {
@@ -54,6 +61,11 @@ public class MusicController : Controller
     public async Task<ViewResult> Index()
     {
         return View();
+    }    
+    
+    [Route("about")]
+    public async Task<ViewResult> About()
+    {
+        return View();
     }
-
 }
