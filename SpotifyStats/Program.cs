@@ -27,6 +27,17 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.Use(async (context, next) =>
+{
+    if (context.Request.Path == "/")
+    {
+        context.Response.Redirect("/auth");
+    }
+    else
+    {
+        await next();
+    }
+});
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Music}/{action=Index}/{id?}");
