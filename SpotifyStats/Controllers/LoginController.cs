@@ -37,6 +37,6 @@ public class LoginController : Controller
             .CreateDefault()
             .WithAuthenticator(new AuthorizationCodeAuthenticator(_clientId, _secretId, response));
         _spotifyClientFactory.SetAccessToken(response.AccessToken);
-        return RedirectToAction("index", "Music");
+        return RedirectToAction("Index", "Music");
     }
 }
