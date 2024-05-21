@@ -27,8 +27,8 @@ public class LoginController : Controller
         return Redirect(uri.ToString());
     }
 
-    [HttpGet("callback")]
-    public async Task GetCallback(string code)
+    [Route("callback")]
+    public async Task<RedirectToActionResult> GetCallback(string code)
     {
         var response = await new OAuthClient().RequestToken(
             new AuthorizationCodeTokenRequest(_clientId, _secretId, code, new Uri("http://localhost:5252/callback"))
@@ -37,5 +37,6 @@ public class LoginController : Controller
             .CreateDefault()
             .WithAuthenticator(new AuthorizationCodeAuthenticator(_clientId, _secretId, response));
         _spotifyClientFactory.SetAccessToken(response.AccessToken);
+        return RedirectToAction("index", "Music");
     }
 }

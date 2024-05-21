@@ -2,6 +2,7 @@ using System.Diagnostics;
 using System.Net;
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor.Compilation;
 using Newtonsoft.Json;
 using RestSharp;
 using SpotifyStats.Models;
@@ -42,9 +43,17 @@ public class MusicController : Controller
         var tracks = topTracksResponse.Items.Select(tracks => new Tracks
         {
             Name = tracks.Name,
+            Artist = tracks.Artists,
             ImageUrl = tracks.Album.Images.FirstOrDefault()?.Url
         }).ToList();
 
         return View(tracks);
     }
+    
+    [Route("home")]
+    public async Task<ViewResult> Index()
+    {
+        return View();
+    }
+
 }
